@@ -21,6 +21,9 @@ function md(t) {
 function inline(s) {
   return s
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a class="lnk" href="$2">$1</a>')
+    .replace(/&lt;:([a-zA-Z0-9_]+):(\d+)&gt;/g, '<span class="emoji-tag" title="$1">:$1:</span>')
+    .replace(/:(PNG|NitroActivate|ProBot_icon|loading|avj_crown|tag111|551465redheart|tick):/g, '<span class="emoji-tag">:$1:</span>')
+    .replace(/__([^_]+)__/g, '<u>$1</u>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/`([^`]+)`/g, '<code class="code">$1</code>')
     .replace(/&lt;#(\d+)&gt;/g, (_, id) => `<span class="chan">#${CHANNELS[id] || id}</span>`);
