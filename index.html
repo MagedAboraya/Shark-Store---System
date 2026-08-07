@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SHARK STORE — Components V2 Welcome</title>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.0/dist/index.global.js"
+    integrity="sha384-nWTzRTCY/9V4Bo352ehygr1c4cnst4XN6lMR3fipakEQrhVpc0hEM5Dii3Amz0sT"
+    crossorigin="anonymous"
+  ></script>
+  <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+  </style>
+  <script>
+    document.documentElement.classList.toggle(
+      'dark',
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    );
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-dvh text-sm antialiased bg-[#0d0518] text-slate-200">
+
+  <div class="w-full max-w-5xl mx-auto p-3 sm:p-6">
+
+    <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#a855f7] shadow-[0_0_10px_#a855f7]"></span>
+        <h1 class="font-semibold tracking-wide text-slate-100 truncate">SHARK STORE — Welcome</h1>
+        <span class="v2-chip">Components V2 · flag 32768</span>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <button data-tab="preview" class="tab-btn tab-active">Preview</button>
+        <button data-tab="assets" class="tab-btn">Assets</button>
+        <button data-tab="json" class="tab-btn">V2 Payload</button>
+      </div>
+    </div>
+    <p class="text-[11px] text-[#7b6d95] mb-4">
+      Rendered live from <code class="code">payload.json</code> — Container (17) · Media Gallery (12) ·
+      Text Display (10) · Section (9) · Thumbnail (11) · Separator (14) · Action Row (1)
+    </p>
+
+    <!-- ========================= DISCORD V2 PREVIEW ========================= -->
+    <section id="tab-preview">
+      <div class="discord-window">
+        <div class="discord-topbar">
+          <span class="text-[#8f96a3] text-lg leading-none">#</span>
+          <span class="font-semibold text-slate-100">welcome</span>
+          <span class="hidden sm:inline text-[#8f96a3] border-l border-[#3f4147] pl-3 ml-1 text-xs">Lorem ipsum dolor sit amet.</span>
+        </div>
+
+        <div class="discord-body">
+          <p class="text-center text-[11px] text-[#8f96a3] py-3">This is the beginning of this server.</p>
+          <div class="divider"><span>January 10, 2026</span></div>
+
+          <div class="flex gap-3 px-3 sm:px-5 py-3">
+            <img src="cover.png" alt="" class="avatar">
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="font-semibold text-[#c084fc]">SHARK STORE</span>
+                <span class="badge-app">✓ APP</span>
+                <span class="text-[11px] text-[#8f96a3]">10/01/2026 1:13 AM</span>
+              </div>
+              <!-- containers injected here by app.js from the real V2 payload -->
+              <div id="v2-root" class="mt-2 flex flex-col gap-3"></div>
+            </div>
+          </div>
+          <div class="h-6"></div>
+        </div>
+
+        <div class="discord-input">
+          <span class="plus">+</span>
+          <span class="text-[#72767d]">Message #welcome</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= ASSETS ============================= -->
+    <section id="tab-assets" class="hidden">
+      <div class="card-grid"></div>
+    </section>
+
+    <!-- ============================= JSON ============================= -->
+    <section id="tab-json" class="hidden">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+        <p class="text-[11px] text-[#a78bfa]">
+          <span id="comp-count"></span> components · limit 40 · max 10 children per container
+        </p>
+        <button id="copy-json" class="tab-btn">Copy JSON</button>
+      </div>
+      <div class="table-wrapper json-box"><pre id="json-out"></pre></div>
+      <p class="text-[11px] text-[#7b6d95] mt-3">
+        Upload the PNGs as attachments with the same filenames — <code class="code">attachment://cover.png</code>
+        resolves to them. Or swap each URL for a CDN link.
+      </p>
+    </section>
+
+    <p class="text-center text-[11px] text-[#6b7280] mt-6">Lorem ipsum placeholder copy — SHARK STORE brand kit</p>
+  </div>
+
+  <script src="payload.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
