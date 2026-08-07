@@ -13,6 +13,7 @@ function md(t) {
       if (line.startsWith('## ')) return `<h2>${inline(line.slice(3))}</h2>`;
       if (line.startsWith('# ')) return `<h1>${inline(line.slice(2))}</h1>`;
       if (line.startsWith('-# ')) return `<p class="subtext">${inline(line.slice(3))}</p>`;
+      if (line.startsWith('&gt; ')) return `<blockquote>${inline(line.slice(5))}</blockquote>`;
       return `<p>${inline(line)}</p>`;
     })
     .join('');
@@ -21,8 +22,17 @@ function inline(s) {
   return s
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a class="lnk" href="$2">$1</a>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-    .replace(/`([^`]+)`/g, '<code class="code">$1</code>');
+    .replace(/`([^`]+)`/g, '<code class="code">$1</code>')
+    .replace(/&lt;#(\d+)&gt;/g, (_, id) => `<span class="chan">#${CHANNELS[id] || id}</span>`);
 }
+
+const CHANNELS = {
+  '1524645415109267576': 'apply-to-team',
+  '1524645423611117658': 'apply-to-support',
+  '1534301945722966287': 'rules',
+  '1524645355961061451': 'news',
+  '1524645376974393436': 'paid-ads',
+};
 
 const BTN_STYLE = { 1: 'btn-primary', 2: 'btn-secondary', 3: 'btn-success', 4: 'btn-danger', 5: 'btn-link' };
 
@@ -74,15 +84,15 @@ function countComponents(list) {
 
 // ---- assets tab --------------------------------------------------------
 const ASSETS = [
-  ['cover.png', 'Server Cover / Banner', '1200 × 420'],
-  ['hero_getstarting.png', 'GET STARTING · ABOUT US', '1200 × 330'],
-  ['sec_information.png', 'INFORMATION', '1100 × 140'],
-  ['sec_rules.png', 'LOREM IPSUM RULES', '1100 × 140'],
-  ['sec_contact.png', 'CONTACT WITH US', '1100 × 140'],
-  ['sec_support.png', 'JOIN OUR SUPPORT TEAM', '1100 × 140'],
-  ['footer_thatsit.png', "AND THAT'S IT", '1200 × 300'],
-  ['brandbar.png', 'Brand Bar', '1100 × 64'],
-  ['qr.png', 'QR Thumbnail', '1080 × 1080'],
+  ['shark_cover.png', 'Server Cover', '1920 × 1080'],
+  ['shark_logo.png', 'Logo / Thumbnail', '1080 × 1080'],
+  ['qr.png', 'QR Code', '1080 × 1080'],
+  ['banner_news.png', 'News — #news', '1920 × 768'],
+  ['banner_paid_ads.png', 'Paid ads — #paid-ads', '1920 × 768'],
+  ['banner_apply_team.png', 'Apply To Team — #apply-to-team', '1920 × 768'],
+  ['banner_apply_support.png', 'Apply To Support — #apply-to-support', '1920 × 768'],
+  ['banner_rules.png', 'Rules — #rules', '1920 × 768'],
+  ['brandbar.png', 'Brand Bar', '960 × 50'],
 ];
 
 function init() {

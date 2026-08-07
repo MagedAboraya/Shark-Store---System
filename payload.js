@@ -10,26 +10,40 @@ window.SHARK_PAYLOAD = {
           "items": [
             {
               "media": {
-                "url": "attachment://cover.png"
+                "url": "attachment://shark_cover.png"
               },
               "description": "Shark Store cover"
             }
           ]
         },
         {
-          "type": 12,
-          "items": [
-            {
-              "media": {
-                "url": "attachment://hero_getstarting.png"
-              },
-              "description": "Get starting - about us"
-            }
-          ]
+          "type": 10,
+          "content": "# SHARK STORE\nLorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-          "type": 10,
-          "content": "## Hi everyone 👋\nLorem ipsum dolor sit amet, **consectetur adipiscing elit**. Here is a link to this server: [Lorem Ipsum](https://discord.gg/lorem)."
+          "type": 14,
+          "divider": true,
+          "spacing": 2
+        },
+        {
+          "type": 9,
+          "components": [
+            {
+              "type": 10,
+              "content": "### Lorem Ipsum Dolor"
+            },
+            {
+              "type": 10,
+              "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+          ],
+          "accessory": {
+            "type": 11,
+            "media": {
+              "url": "attachment://shark_logo.png"
+            },
+            "description": "Lorem ipsum"
+          }
         },
         {
           "type": 14,
@@ -41,20 +55,11 @@ window.SHARK_PAYLOAD = {
           "items": [
             {
               "media": {
-                "url": "attachment://sec_information.png"
+                "url": "attachment://qr.png"
               },
-              "description": "Information"
+              "description": "Shark Store QR code"
             }
           ]
-        },
-        {
-          "type": 10,
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
-        },
-        {
-          "type": 14,
-          "divider": true,
-          "spacing": 1
         },
         {
           "type": 10,
@@ -71,15 +76,15 @@ window.SHARK_PAYLOAD = {
           "items": [
             {
               "media": {
-                "url": "attachment://sec_rules.png"
+                "url": "attachment://banner_news.png"
               },
-              "description": "Lorem ipsum rules"
+              "description": "News"
             }
           ]
         },
         {
           "type": 10,
-          "content": "**01** — Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n**02** — Sed do eiusmod tempor incididunt ut labore et dolore.\n**03** — Ut enim ad minim veniam, quis nostrud exercitation.\n**04** — Duis aute irure dolor in reprehenderit in voluptate velit."
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.\n> <#1524645355961061451>"
         },
         {
           "type": 14,
@@ -91,78 +96,15 @@ window.SHARK_PAYLOAD = {
           "items": [
             {
               "media": {
-                "url": "attachment://sec_contact.png"
+                "url": "attachment://banner_paid_ads.png"
               },
-              "description": "Contact with us"
+              "description": "Paid ads"
             }
           ]
         },
         {
           "type": 10,
-          "content": "Lorem ipsum, you can send an email here `lorem@ipsum.dolor` or DM us here.\nYou can also send your problem on our socials below."
-        },
-        {
-          "type": 1,
-          "components": [
-            {
-              "type": 2,
-              "style": 5,
-              "label": "Lorem",
-              "url": "https://example.com/lorem"
-            },
-            {
-              "type": 2,
-              "style": 5,
-              "label": "Ipsum",
-              "url": "https://example.com/ipsum"
-            },
-            {
-              "type": 2,
-              "style": 5,
-              "label": "Dolor",
-              "url": "https://example.com/dolor"
-            }
-          ]
-        },
-        {
-          "type": 14,
-          "divider": true,
-          "spacing": 2
-        },
-        {
-          "type": 12,
-          "items": [
-            {
-              "media": {
-                "url": "attachment://sec_support.png"
-              },
-              "description": "Join our support team"
-            }
-          ]
-        },
-        {
-          "type": 10,
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit — sed do eiusmod tempor incididunt ut labore. Apply below 👇"
-        },
-        {
-          "type": 1,
-          "components": [
-            {
-              "type": 2,
-              "style": 1,
-              "label": "Open Ticket",
-              "custom_id": "shark_open_ticket",
-              "emoji": {
-                "name": "🎫"
-              }
-            },
-            {
-              "type": 2,
-              "style": 2,
-              "label": "Lorem Ipsum",
-              "custom_id": "shark_lorem"
-            }
-          ]
+          "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n> <#1524645376974393436>"
         }
       ]
     },
@@ -171,40 +113,88 @@ window.SHARK_PAYLOAD = {
       "accent_color": 11032055,
       "components": [
         {
-          "type": 9,
-          "components": [
+          "type": 12,
+          "items": [
             {
-              "type": 10,
-              "content": "### Lorem Ipsum Dolor"
-            },
-            {
-              "type": 10,
-              "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              "media": {
+                "url": "attachment://banner_apply_team.png"
+              },
+              "description": "Apply to team"
             }
-          ],
-          "accessory": {
-            "type": 11,
-            "media": {
-              "url": "attachment://qr.png"
-            },
-            "description": "Lorem ipsum"
-          }
+          ]
+        },
+        {
+          "type": 10,
+          "content": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n> <#1524645415109267576>"
         },
         {
           "type": 14,
           "divider": true,
-          "spacing": 1
+          "spacing": 2
         },
         {
           "type": 12,
           "items": [
             {
               "media": {
-                "url": "attachment://footer_thatsit.png"
+                "url": "attachment://banner_apply_support.png"
               },
-              "description": "And that's it"
+              "description": "Apply to support"
             }
           ]
+        },
+        {
+          "type": 10,
+          "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.\n> <#1524645423611117658>"
+        },
+        {
+          "type": 1,
+          "components": [
+            {
+              "type": 2,
+              "style": 1,
+              "label": "Apply To Team",
+              "custom_id": "shark_apply_team",
+              "emoji": {
+                "name": "📋"
+              }
+            },
+            {
+              "type": 2,
+              "style": 2,
+              "label": "Apply To Support",
+              "custom_id": "shark_apply_support",
+              "emoji": {
+                "name": "🎫"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 17,
+      "accent_color": 8134614,
+      "components": [
+        {
+          "type": 12,
+          "items": [
+            {
+              "media": {
+                "url": "attachment://banner_rules.png"
+              },
+              "description": "Rules"
+            }
+          ]
+        },
+        {
+          "type": 10,
+          "content": "**01** — Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n**02** — Sed do eiusmod tempor incididunt ut labore et dolore.\n**03** — Ut enim ad minim veniam, quis nostrud exercitation.\n**04** — Duis aute irure dolor in reprehenderit in voluptate.\n> <#1534301945722966287>"
+        },
+        {
+          "type": 14,
+          "divider": true,
+          "spacing": 2
         },
         {
           "type": 12,
@@ -227,39 +217,39 @@ window.SHARK_PAYLOAD = {
   "attachments": [
     {
       "id": 0,
-      "filename": "cover.png"
+      "filename": "shark_cover.png"
     },
     {
       "id": 1,
-      "filename": "hero_getstarting.png"
+      "filename": "shark_logo.png"
     },
     {
       "id": 2,
-      "filename": "sec_information.png"
+      "filename": "qr.png"
     },
     {
       "id": 3,
-      "filename": "sec_rules.png"
+      "filename": "banner_news.png"
     },
     {
       "id": 4,
-      "filename": "sec_contact.png"
+      "filename": "banner_paid_ads.png"
     },
     {
       "id": 5,
-      "filename": "sec_support.png"
+      "filename": "banner_apply_team.png"
     },
     {
       "id": 6,
-      "filename": "footer_thatsit.png"
+      "filename": "banner_apply_support.png"
     },
     {
       "id": 7,
-      "filename": "brandbar.png"
+      "filename": "banner_rules.png"
     },
     {
       "id": 8,
-      "filename": "qr.png"
+      "filename": "brandbar.png"
     }
   ]
 };

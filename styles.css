@@ -265,3 +265,11 @@ body {
   .v2-container { padding: 12px; }
   .v2-thumb { width: 64px; height: 64px; }
 }
+
+.v2-text blockquote {
+  margin: 6px 0 2px;
+  padding: 2px 0 2px 10px;
+  border-left: 4px solid #4e5058;
+  border-radius: 2px;
+}
+.v2-text blockquote .chan { font-size: 14px; }
