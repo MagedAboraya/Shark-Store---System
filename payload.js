@@ -206,10 +206,6 @@ window.SHARK_PAYLOAD = {
               "description": "Shark Store"
             }
           ]
-        },
-        {
-          "type": 10,
-          "content": "-# 𝐒𝐇𝐀𝐑𝐊 𝐒𝐓𝐎𝐑𝐄 · شـارك سـتـور · 2026"
         }
       ]
     }

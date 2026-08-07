@@ -170,7 +170,6 @@ container_rules = {
         ),
         SEP(True, 2),
         MG("brandbar.png", desc="Shark Store"),
-        TD("-# 𝐒𝐇𝐀𝐑𝐊 𝐒𝐓𝐎𝐑𝐄 · شـارك سـتـور · 2026"),
     ],
 }
 
@@ -197,13 +196,12 @@ def count(comps):
 
 
 if __name__ == "__main__":
-    out = "/home/user/shark_store_welcome/"
-    os.makedirs(out, exist_ok=True)
+    out = ""
     js = json.dumps(payload, indent=2, ensure_ascii=False)
-    open(out + "payload.json", "w", encoding="utf-8").write(js)
-    open(out + "payload.js", "w", encoding="utf-8").write(
-        "window.SHARK_PAYLOAD = " + js + ";\n"
-    )
+    with open("payload.json", "w", encoding="utf-8") as f:
+        f.write(js)
+    with open("payload.js", "w", encoding="utf-8") as f:
+        f.write("window.SHARK_PAYLOAD = " + js + ";\n")
     print("total components:", count(payload["components"]), "(limit 40)")
     for i, c in enumerate(payload["components"], 1):
         print(f"  container {i}: {len(c['components'])} children (limit 10)")
