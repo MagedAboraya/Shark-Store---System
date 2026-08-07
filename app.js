@@ -51,8 +51,10 @@ function render(c) {
                 ${c.items.map(i => `<img src="${url(i.media.url)}" alt="${i.description || ''}" loading="lazy">`).join('')}
               </div>`;
     }
-    case 10: // TEXT DISPLAY
-      return `<div class="v2-text">${md(c.content)}</div>`;
+    case 10: { // TEXT DISPLAY
+      const rtl = /[\u0600-\u06FF]/.test(c.content);
+      return `<div class="v2-text${rtl ? ' rtl' : ''}">${md(c.content)}</div>`;
+    }
     case 14: // SEPARATOR
       return `<div class="v2-sep ${c.spacing === 2 ? 'sep-lg' : 'sep-sm'} ${c.divider === false ? 'no-line' : ''}"></div>`;
     case 9: { // SECTION

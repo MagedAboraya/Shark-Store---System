@@ -18,7 +18,7 @@
         },
         {
           "type": 10,
-          "content": "# SHARK STORE\nLorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          "content": "## 𝐒𝐇𝐀𝐑𝐊 𝐒𝐓𝐎𝐑𝐄 ---- شـارك سـتـور\nالـسـلام عـلـيـكـم ورحـمـة الله وبـركـاتـه\nأهـلاً بـيـكـم فـي شـارك سـتـور، أكـبـر اسـتـور مـن حـيـث الـمـنـتـجـات الـمـتـاحـة\nتـقـدر تـشـتـري مـن هـنـا كـل حـاجـة انـت مـحـتـاجـهـا مـن تـصـامـيـم وخـدمـات وإلـخ..."
         },
         {
           "type": 14,
@@ -30,11 +30,11 @@
           "components": [
             {
               "type": 10,
-              "content": "### Lorem Ipsum Dolor"
+              "content": "### 𝐖𝐡𝐨 𝐚𝐫𝐞 𝐰𝐞 --- مـن نـحـن"
             },
             {
               "type": 10,
-              "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "content": "إحـنـا سـتـور مـتـمـيـز واسـمـنـا **𝐒𝐡𝐚𝐫𝐤 𝐒𝐭𝐨𝐫𝐞**\nتـم إنـشـاء الاسـتـور سـنـة **2026**"
             }
           ],
           "accessory": {
@@ -42,7 +42,7 @@
             "media": {
               "url": "attachment://shark_logo.png"
             },
-            "description": "Lorem ipsum"
+            "description": "Shark Store logo"
           }
         },
         {
@@ -63,7 +63,7 @@
         },
         {
           "type": 10,
-          "content": "-# Lorem ipsum dolor sit amet · consectetur adipiscing elit"
+          "content": "-# 𝐒𝐇𝐀𝐑𝐊 𝐒𝐓𝐎𝐑𝐄 · شـارك سـتـور"
         }
       ]
     },
@@ -84,7 +84,7 @@
         },
         {
           "type": 10,
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.\n> <#1524645355961061451>"
+          "content": "### 𝐒𝐡𝐚𝐫𝐤 𝐍𝐞𝐰𝐬 --- أخـبـار الـسـيـرفـر\nتـقـدر تـشـوف كـل أخـبـار الـسـيـرفـر مـن تـحـديـثـات لـلـبـوت وكـل شـيـء مـن هـنـا\n> <#1524645355961061451>"
         },
         {
           "type": 14,
@@ -104,7 +104,7 @@
         },
         {
           "type": 10,
-          "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n> <#1524645376974393436>"
+          "content": "### 𝐒𝐡𝐚𝐫𝐤 𝐀𝐝𝐬 --- شـراء إعـلانـات\nتـقـدر تـشـتـري إعـلان لـسـيـرفـرك أو مـتـجـرك مـن هـنـا\n> <#1524645376974393436>"
         }
       ]
     },
@@ -125,7 +125,7 @@
         },
         {
           "type": 10,
-          "content": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n> <#1524645415109267576>"
+          "content": "### 𝐀𝐩𝐩𝐥𝐲 𝐓𝐨 𝐓𝐞𝐚𝐦 --- الـتـقـد يـم عـلـى الـسـيـلـر\nعـايـز تـبـقـى سـيـلـر وتـنـضـم لـلـتـيـم بـتـاعـنـا؟ تـنـورنـا! افـتـح تـكـت وتـأكـد مـن إﻧـك مـتـطـابـق لـكـل الـشـروط:\n• يـجـب الـتـأكـد مـن وجـود **30** فـيـدبـاك إيـجـابـي (إجـبـاريًـا)\n• يـجـب الـتـأكـد مـن وجـود مـبـلـغ ضـمـان **300m / 150 EGP / 3$**\n• نـنـبـه أنـه سـيـتـم أخـذ رقـم الـهـاتـف الـخـاص بـك كـإجـراء أمـان إجـبـاري\n• مـمـنـوع الإزعـاج بـالـمـنـشـن وسـنـقـوم بـالـرد عـلـيـك فـي أقـرب وقـت\n• يـجـب تـوفـر الـفـيـدبـاك والـضـمـان مـعـاً\n> <#1524645415109267576>"
         },
         {
           "type": 14,
@@ -145,7 +145,7 @@
         },
         {
           "type": 10,
-          "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.\n> <#1524645423611117658>"
+          "content": "### 𝐀𝐩𝐩𝐥𝐲 𝐓𝐨 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 --- تـقـد يـم لـلإدارة\nعـايـز تـقـدم مـعـانـا فـي الإدارة؟ وتـبـنـي نـفـسـك مـعـانـا مـن الـصـفـر؟\nافـتـح تـكـت مـن هـنـا:\n> <#1524645423611117658>"
         },
         {
           "type": 1,
@@ -189,7 +189,7 @@
         },
         {
           "type": 10,
-          "content": "**01** — Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n**02** — Sed do eiusmod tempor incididunt ut labore et dolore.\n**03** — Ut enim ad minim veniam, quis nostrud exercitation.\n**04** — Duis aute irure dolor in reprehenderit in voluptate.\n> <#1534301945722966287>"
+          "content": "### 𝐒𝐡𝐚𝐫𝐤 𝐑𝐮𝐥𝐞𝐬 --- قـوانـيـن شـارك سـتـور\n• **مـنـع الـمـحـتـوى الـجـنـسـي الـصـريـح:** يـحـظـر نـشـر صـور أو مـحـتـوى غـيـر لـائـق فـي الـرومـات الـعـامـة ويـجـب تـحـديـد الـقـنـوات الـمـخـصـصـة لـلـبـالـغـيـن بـعـلـامـة (NSFW).\n• **عـدم إيـذاء الـنـفـس:** يـمـنـع تـشـجـيـع الانـتـحـار أو إيـذاء الـنـفـس أو الـتـلـاعـب الـعـاطـفـي.\n• **حـظـر الـتـعـدي والـمـضـايـقـة:** يـمـنـع الـتـنـمـر، والـتـهـديـد، والـتـحـرش بـالأخـريـن أو نـشـر مـعـلـومـاتـهـم الـشـخـصـيـة.\n• **مـكـافـحـة الاحـتـيـال والأمـان:** يـحـظـر نـشـر الـروابـط الـوهـمـيـة، أو الـفـيـروسـات، أو مـحـاولـات الـتـجـسـس واخـتـراق الـحـسـابـات (الـتـصـيـد الاحـتـيـالـي).\n> <#1534301945722966287>"
         },
         {
           "type": 14,
@@ -209,7 +209,7 @@
         },
         {
           "type": 10,
-          "content": "-# Lorem ipsum placeholder copy — SHARK STORE"
+          "content": "-# 𝐒𝐇𝐀𝐑𝐊 𝐒𝐓𝐎𝐑𝐄 · شـارك سـتـور · 2026"
         }
       ]
     }
